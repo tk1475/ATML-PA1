@@ -1,3 +1,55 @@
 
 
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Virtual environments
+venv/
+.venv/
+env/
+atml_env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data & outputs
+data/
+datasets/
+outputs/
+results/
+logs/
+
+# Model checkpoints and large artifacts
 *.pth
+*.pt
+*.ckpt
+*.onnx
+*.tflite
+*.bin
+*.tar
+*.tar.gz
+*.zip
+
+# Task folders (if any duplicates)
+Task1/data/
+Task1/results*/
+Task1/outputs*/
+Task-1/data/
+Task-1/results*/
+Task-1/outputs*/
+
+# VS Code
+.vscode/
+
+# Misc
+*.tmp
+*.swp
+*.swo
