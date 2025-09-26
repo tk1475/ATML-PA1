@@ -20,16 +20,14 @@ atml_env/
 # Jupyter
 .ipynb_checkpoints/
 
-# Data & outputs
+# Data & outputs (global)
 data/
 datasets/
 outputs/
 results/
 logs/
 
-# Model checkpoints and large artifacts
-*.pth
-*.pt
+# Model checkpoints and large artifacts (global)
 *.ckpt
 *.onnx
 *.tflite
@@ -38,13 +36,16 @@ logs/
 *.tar.gz
 *.zip
 
-# Task folders (if any duplicates)
-Task1/data/
-Task1/results*/
-Task1/outputs*/
-Task-1/data/
-Task-1/results*/
-Task-1/outputs*/
+# Task-specific ignores
+# Do not track results for Task-1
+Task-1/results/
+# Do not track checkpoints in Task-1
+Task-1/*.pth
+Task-1/*.pt
+
+# Local backups and temporary artifacts
+.local_backup_*/
+Task-1/.local_artifacts/
 
 # VS Code
 .vscode/
