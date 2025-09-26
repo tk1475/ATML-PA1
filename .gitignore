@@ -24,7 +24,7 @@ atml_env/
 data/
 datasets/
 outputs/
-results/
+# results/
 logs/
 
 # Model checkpoints and large artifacts (global)
@@ -38,7 +38,6 @@ logs/
 
 # Task-specific ignores
 # Do not track results for Task-1
-Task-1/results/
 # Do not track checkpoints in Task-1
 Task-1/*.pth
 Task-1/*.pt
